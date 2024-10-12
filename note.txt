@@ -1,0 +1,32 @@
+backend/
+├── src/
+│   ├── api/
+│   │   ├── user/
+│   │   │   ├── user.controller.js  # User-related logic
+│   │   │   ├── user.model.js       # User model
+│   │   │   ├── user.routes.js      # User routes
+│   │   │   ├── user.service.js     # User business logic
+│   │   │   └── user.validation.js  # User input validation
+│   │   ├── auth/
+│   │   │   ├── auth.controller.js  # Auth logic (login, register)
+│   │   │   ├── auth.service.js     # Auth service (JWT generation, password hashing)
+│   │   │   ├── auth.routes.js      # Auth routes (login, register)
+│   │   │   └── auth.middleware.js  # Auth middleware (JWT validation)
+│   │   └── product/
+│   │       ├── product.controller.js  # Product-related logic
+│   │       ├── product.model.js       # Product model
+│   │       ├── product.routes.js      # Product routes
+│   │       └── product.service.js     # Product business logic
+│   ├── config/
+│   │   ├── db.js                   # Database connection settings
+│   │   └── jwt.js                  # JWT secret and token generation
+│   ├── middleware/
+│   │   └── errorHandler.js         # Error handling middleware
+│   ├── utils/
+│   │   └── logger.js               # Logging utility (e.g., Winston)
+│   ├── app.js                      # Main Express app setup
+│   ├── server.js                   # Server start point
+├── .env                            # Environment variables
+├── .gitignore                      # Git ignore file
+├── package.json                    # Project dependencies and scripts
+└── README.md                       # Project documentation
